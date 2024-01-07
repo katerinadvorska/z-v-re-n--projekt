@@ -120,6 +120,11 @@
     font-size: 12px;
   }
 }
+@media screen and (min-width: 800px) {
+  .odkaz {
+    font-size: 14px;
+  }
+}
 .footer {
   background-color: #181818;
 }
@@ -331,6 +336,10 @@ body {
   font-size: 14px;
 }
 
+.program_detail__title {
+  margin-left: 30px;
+}
+
 h4,
 h5 {
   font-size: 14px;
@@ -402,7 +411,7 @@ h5 {
 
 .onas h1 {
   margin-left: 0;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
@@ -459,10 +468,15 @@ h5 {
 
 .contact__uvod {
   text-align: center;
+  font-size: 18px;
 }
 
 .kontakt a {
   color: white;
+}
+
+.kontakt h1 {
+  font-size: 14px;
 }
 
 .kontakt a:hover {
