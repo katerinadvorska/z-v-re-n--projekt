@@ -1,0 +1,86 @@
+@use 'colors';
+
+// mobilni zobrazeni
+.month {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.kalendar {
+	display: grid;
+	grid-template-columns: repeat(7, 30px);
+	grid-template-rows: repeat(6, 30px);
+	list-style: none;
+	gap: 2px;
+    font-size: 14px;
+	padding: 0;
+}
+
+.kalendar li {
+	border: 1px solid colors.$c-secundary;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+}
+
+.kalendar a {
+	text-decoration: none;
+	color: white;
+}
+
+.zahlavi {
+	background-color: colors.$c-secundary;
+	color: white;
+	border: none;
+}
+
+.predchozi,
+.nasledujici {
+	background-color: silver;
+	color: gray;
+	border: none;
+}
+
+h1 {
+	text-align: center;
+    font-size: 16px;
+}
+
+.event {
+    background-color: colors.$c-button;
+}
+
+.event:hover {
+    background-color: colors.$c-button-hover;
+}
+
+
+// PC zobrazeni
+@media screen and (min-width: 1000px) {
+	.calendar {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 50px;
+		gap: 15px;
+	}
+
+	.kalendar {
+		grid-template-columns: repeat(7, 40px);
+	    grid-template-rows: repeat(6, 40px);
+		gap: 5px;
+	}
+
+	.month {
+		display: block;
+		align-items: center;
+	}
+
+	h1 {
+		margin: 0;
+	}
+	
+}

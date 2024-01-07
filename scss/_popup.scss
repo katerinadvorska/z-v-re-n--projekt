@@ -1,0 +1,158 @@
+@use "colors";
+
+// mobilni zobrazeni
+.button {
+  position: relative;
+  bottom: -100px;
+  left: -2px;
+  background-color: colors.$c-button;
+  color: colors.$c-text-primary;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  padding-block: 8px;
+  padding-inline: 15px;
+  text-decoration: none;
+}
+
+.kapela__button {
+  position: relative;
+  bottom: 2px;
+  left: -2px;
+  background-color: colors.$c-button;
+  color: colors.$c-text-primary;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  padding-block: 8px;
+  padding-inline: 15px;
+  text-decoration: none;
+}
+
+.button:hover,
+.kapela__button:hover {
+  background-color: colors.$c-secundary;
+}
+
+// PC zobrazeni
+@media screen and (min-width: 600px) {
+  .button {
+    position: relative;
+    top: 81%;
+    padding-block: 15px;
+    padding-inline: 25px;
+  }
+
+  .kapela__button {
+    position: relative;
+    left: -5px;
+  }
+}
+
+// mobilni zobrazeni
+.overlay_flight_traveldil1 {
+  position: relative;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 50px;
+}
+
+.overlay_flight_traveldil1:target {
+  visibility: visible;
+  opacity: 2;
+}
+
+.popup_flight_travlDil1 {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 15px;
+  background-color: colors.$c-secundary;
+  border-radius: 5px;
+  position: relative;
+  bottom: 15px;
+  transition: all 2s ease-in-out;
+}
+
+.popup_flight_travlDil1 .close_flight_travelDl1 {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup_flight_travlDil1 .content_flightht_travel_dil1 {
+  max-height: 15%;
+  overflow: visible;
+  font-size: small;
+  text-align: justify;
+}
+
+.overlay_flight_traveldil2 {
+  position: relative;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 50px;
+}
+
+.overlay_flight_traveldil2:target {
+  visibility: visible;
+  opacity: 2;
+}
+
+.popup_flight_travlDil2 {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 15px;
+  background-color: colors.$c-secundary;
+  border-radius: 5px;
+  position: relative;
+  bottom: 50px;
+  transition: all 2s ease-in-out;
+}
+
+.popup_flight_travlDil2 .close_flight_travelDl2 {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup_flight_travlDil2 .content_flightht_travel_dil2 {
+  max-height: 15%;
+  overflow: visible;
+  font-size: small;
+  text-align: justify;
+}
+
+// PC zobrazeni
+@media screen and (min-width: 600px) {
+  .overlay_flight_traveldil1 {
+    position: relative;
+    top: 58%;
+  }
+
+  .popup_flight_travlDil1 .close_flight_travelDl1 {
+    position: relative;
+    top: 0px;
+    right: -95%;
+  }
+
+  .overlay_flight_traveldil2 {
+    position: relative;
+    top: 58%;
+  }
+
+  .popup_flight_travlDil2 .close_flight_travelDl2 {
+    position: relative;
+    top: 0px;
+    right: -95%;
+  }
+}

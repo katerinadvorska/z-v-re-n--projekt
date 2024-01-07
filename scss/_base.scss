@@ -1,0 +1,407 @@
+@use 'colors';
+
+html {
+    box-sizing: border-box;
+}
+
+*, 
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: colors.$c-primary;
+    color: colors.$c-text-primary;
+}
+
+// CSS UVODNI STRANKA
+
+// mobilni zobrazeni
+.page_header {
+    margin: 30px;
+    text-align: center;
+}
+
+// PC zobrazeni
+@media screen and (min-width: 600px) {
+    .page_header {
+        text-align: left;
+        margin-left: 50px;
+        font-size: 24px;
+    }
+}   
+
+// mobilni zobrazeni
+.section__news {
+    font-family: 'Istok Web', sans-serif;
+    background-color: colors.$c-secundary;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.news__photo {
+    width: 350px;
+    padding: 10px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+}
+
+.news__header {
+    text-align: center;
+    margin: 0;
+    
+
+}
+
+.news__text {
+    font-size: 14px;
+    font-family: 'Istok Web', sans-serif;
+    text-align: justify;
+    margin: 0;
+    padding: 20px;
+   
+}
+
+// PC zobrazeni
+@media screen and (min-width: 600px) {
+    .section__news {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .news__photo {
+        width: 300px;
+    }
+
+    .news__header {
+        text-align: left;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .news__text {
+        margin: 0;
+        font-size: 14px;
+        padding-right: 20px;
+        
+    }
+}
+
+// mobilni zobrazeni
+.page_program__detail_1 {
+    border-radius: 5px;
+    position: relative;
+    height: 200px;
+    background-image: url(/images/rock-band-five-members-upscaled.png);
+    background-size: cover;
+    margin: 20px;
+}
+
+.page_program__detail_2 {
+    border-radius: 5px;
+    position: relative;
+    height: 200px;
+    background-image: url(/images/five-rock-band-members-upscaled.png);
+    background-size: cover;
+    margin: 20px;
+}
+
+.page_program__program_date {
+    border-radius: 2px;
+    background-color: colors.$c-secundary;
+    position: absolute;
+    right: -10px;
+    top: -22px;
+    padding: 10px;
+}
+
+.page_program__program_time {
+    position: relative;
+    top: 85px;
+    left: 2px;
+    background-color: rgba(0, 0, 0, 0.500);
+    border-radius: 2px;
+    padding: 5px;
+    max-width: 15%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.page_program__program_band {
+    position: relative;
+    top: 85px;
+    left: 2px;
+    background-color: rgba(0, 0, 0, 0.500);
+    border-radius: 2px;
+    padding: 5px;
+    max-width: 50%;
+    margin: 0;
+    text-align: center;
+}
+
+// PC zobrazeni
+@media screen and (min-width: 600px) {
+    .page_program {
+        display: flex;
+        flex-direction: row;
+        margin: 40px;
+    }
+    
+    .page_program__detail_1 {
+        height: 500px;
+    }
+
+    .page_program__detail_2 {
+        height: 500px;
+    }
+
+    .page_program__program_date {
+        border-radius: 5px;
+        background-color: colors.$c-secundary;
+        position: absolute;
+        right: -10px;
+        top: -22px;
+        padding: 20px;
+    }
+
+    .page_program__program_time {
+        position: relative;
+        top: 77%;
+        left: 2px;
+        text-align: left;
+        max-width: 8%;
+    }
+
+    .page_program__program_band {
+        position: relative;
+        top: 75%;
+        left: 2px;
+        text-align: left;
+        max-width: 200px;
+    }
+}
+
+// CSS PROGRAM
+
+// mobilni zobrazeni
+.kapela {
+    font-family: 'Istok Web', sans-serif;
+    border: 1px solid colors.$c-secundary;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.kapela__datetime {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: colors.$c-secundary;
+    text-transform: uppercase;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.kapela__img img {
+    max-height: 100px;
+    margin-left: 15px;
+    margin-top: 15px;
+    
+}
+
+.kapela__text {
+    padding: 15px;
+    text-align: justify;
+}
+
+.kapela__text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+h4,
+h5 {
+    font-size: 14px;
+}
+
+// PC zobrazeni
+@media screen and (min-width: 800px) {
+    .kapela {
+        display: flex;
+        flex-direction: row;
+        border: 2px solid colors.$c-secundary;
+    }
+
+    .imgtext {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .kapela__datetime {
+        display: block;
+        padding: 40px;
+        min-width: 150px;
+        background-color: black;
+        color: colors.$c-secundary;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+        border-right: 1px solid colors.$c-secundary;
+    }
+
+    .kapela__img img {
+        max-height: 200px; 
+        margin: 15px;       
+    }
+
+    .kapela__datetime h4 {
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    .kapela__text {
+        padding: 30px;
+    }
+
+    .day {
+        color: white;
+        font-size: 16px;
+        font-weight: 100;
+    }
+    
+}
+
+// CSS O NAS
+
+// mobilni zobrazeni
+.onas {
+    background-color: colors.$c-secundary;
+    color: white;
+    font-family: 'Istok Web', sans-serif;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    margin: 15px;
+
+}
+
+.img_slide__mobile {
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+.img_slide__pc {
+    display: none;
+}
+
+.historie__text {
+    border-bottom: 1px dashed white;
+    padding-bottom: 25px;
+}
+
+.onas h1 {
+    margin-left: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+// PC zobrazeni
+@media screen and (min-width: 700px) {
+    .img_slide__mobile {
+        display: none;
+    }
+
+    .img_slide__pc {
+        display: block;
+        max-width: 150px;
+        border-radius: 5px;
+    }
+
+    .img_slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .onas {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .historie {
+        padding: 30px;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .img_slide__mobile {
+        display: none;
+    }
+
+    .img_slide__pc {
+        display: block;
+        max-width: 200px;
+        border-radius: 5px;
+    }
+}
+
+// CSS KONTAKT
+
+// mobilni zobrazeni
+.contact {
+    font-size: 14px;
+    background-color: colors.$c-secundary;
+    text-align: left;
+    border-radius: 5px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 200;
+    padding: 30px;
+    margin: 30px;
+}
+
+.kontakt {
+    margin: 20px;
+    line-height: 30px;
+}
+
+.contact__uvod {
+    text-align: center;
+}
+
+.kontakt a {
+    color: white;
+}
+
+.kontakt a:hover {
+    color: colors.$c-button;
+}
+
+// PC zobrazeni
+@media screen and (min-width: 600px) {
+     .contact {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+     }
+}
+
+@media screen and (min-width: 800px) {
+    .contact {
+       max-width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+}

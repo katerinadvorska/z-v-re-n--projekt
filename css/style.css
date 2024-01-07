@@ -1,0 +1,686 @@
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+.menu__toggler {
+  cursor: pointer;
+}
+.menu__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: black;
+}
+.menu__link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+.menu__link:hover {
+  background-color: #CE7C00;
+}
+.menu__checkbox:checked ~ .menu__list {
+  display: block;
+}
+@media screen and (min-width: 800px) {
+  .menu__toggler {
+    display: none;
+  }
+  .menu__list {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .menu__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 2px;
+  }
+}
+
+.logo {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ikona {
+  width: 21px;
+}
+
+.odkazy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+
+.odkaz {
+  color: white;
+}
+
+.odkaz:hover {
+  color: #FF9900;
+}
+
+.menu__item--active .menu__link {
+  background-color: #CE7C00;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .odkazy {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 200px;
+  }
+  .ikona {
+    width: 21px;
+  }
+}
+.footer {
+  background-color: #181818;
+}
+
+.footer__footer_text {
+  font-family: "Istok Web", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 30px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: black;
+  color: white;
+}
+
+.page_header {
+  margin: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .page_header {
+    text-align: left;
+    margin-left: 50px;
+    font-size: 24px;
+  }
+}
+.section__news {
+  font-family: "Istok Web", sans-serif;
+  background-color: #CE7C00;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.news__photo {
+  width: 350px;
+  padding: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+}
+
+.news__header {
+  text-align: center;
+  margin: 0;
+}
+
+.news__text {
+  font-size: 14px;
+  font-family: "Istok Web", sans-serif;
+  text-align: justify;
+  margin: 0;
+  padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .section__news {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px;
+  }
+  .news__photo {
+    width: 300px;
+  }
+  .news__header {
+    text-align: left;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  .news__text {
+    margin: 0;
+    font-size: 14px;
+    padding-right: 20px;
+  }
+}
+.page_program__detail_1 {
+  border-radius: 5px;
+  position: relative;
+  height: 200px;
+  background-image: url(/images/rock-band-five-members-upscaled.png);
+  background-size: cover;
+  margin: 20px;
+}
+
+.page_program__detail_2 {
+  border-radius: 5px;
+  position: relative;
+  height: 200px;
+  background-image: url(/images/five-rock-band-members-upscaled.png);
+  background-size: cover;
+  margin: 20px;
+}
+
+.page_program__program_date {
+  border-radius: 2px;
+  background-color: #CE7C00;
+  position: absolute;
+  right: -10px;
+  top: -22px;
+  padding: 10px;
+}
+
+.page_program__program_time {
+  position: relative;
+  top: 85px;
+  left: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  padding: 5px;
+  max-width: 15%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.page_program__program_band {
+  position: relative;
+  top: 85px;
+  left: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  padding: 5px;
+  max-width: 50%;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .page_program {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+  }
+  .page_program__detail_1 {
+    height: 500px;
+  }
+  .page_program__detail_2 {
+    height: 500px;
+  }
+  .page_program__program_date {
+    border-radius: 5px;
+    background-color: #CE7C00;
+    position: absolute;
+    right: -10px;
+    top: -22px;
+    padding: 20px;
+  }
+  .page_program__program_time {
+    position: relative;
+    top: 77%;
+    left: 2px;
+    text-align: left;
+    max-width: 8%;
+  }
+  .page_program__program_band {
+    position: relative;
+    top: 75%;
+    left: 2px;
+    text-align: left;
+    max-width: 200px;
+  }
+}
+.kapela {
+  font-family: "Istok Web", sans-serif;
+  border: 1px solid #CE7C00;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.kapela__datetime {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #CE7C00;
+  text-transform: uppercase;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.kapela__img img {
+  max-height: 100px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.kapela__text {
+  padding: 15px;
+  text-align: justify;
+}
+
+.kapela__text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+h4,
+h5 {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 800px) {
+  .kapela {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #CE7C00;
+  }
+  .imgtext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .kapela__datetime {
+    display: block;
+    padding: 40px;
+    min-width: 150px;
+    background-color: black;
+    color: #CE7C00;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-right: 1px solid #CE7C00;
+  }
+  .kapela__img img {
+    max-height: 200px;
+    margin: 15px;
+  }
+  .kapela__datetime h4 {
+    font-size: 18px;
+    font-weight: 100;
+  }
+  .kapela__text {
+    padding: 30px;
+  }
+  .day {
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+  }
+}
+.onas {
+  background-color: #CE7C00;
+  color: white;
+  font-family: "Istok Web", sans-serif;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  margin: 15px;
+}
+
+.img_slide__mobile {
+  max-height: 200px;
+  border-radius: 5px;
+}
+
+.img_slide__pc {
+  display: none;
+}
+
+.historie__text {
+  border-bottom: 1px dashed white;
+  padding-bottom: 25px;
+}
+
+.onas h1 {
+  margin-left: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 700px) {
+  .img_slide__mobile {
+    display: none;
+  }
+  .img_slide__pc {
+    display: block;
+    max-width: 150px;
+    border-radius: 5px;
+  }
+  .img_slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .onas {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .historie {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .img_slide__mobile {
+    display: none;
+  }
+  .img_slide__pc {
+    display: block;
+    max-width: 200px;
+    border-radius: 5px;
+  }
+}
+.contact {
+  font-size: 14px;
+  background-color: #CE7C00;
+  text-align: left;
+  border-radius: 5px;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 200;
+  padding: 30px;
+  margin: 30px;
+}
+
+.kontakt {
+  margin: 20px;
+  line-height: 30px;
+}
+
+.contact__uvod {
+  text-align: center;
+}
+
+.kontakt a {
+  color: white;
+}
+
+.kontakt a:hover {
+  color: #FF9900;
+}
+
+@media screen and (min-width: 600px) {
+  .contact {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  .contact {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.button {
+  position: relative;
+  bottom: -100px;
+  left: -2px;
+  background-color: #FF9900;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  padding-block: 8px;
+  padding-inline: 15px;
+  text-decoration: none;
+}
+
+.kapela__button {
+  position: relative;
+  bottom: 2px;
+  left: -2px;
+  background-color: #FF9900;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  padding-block: 8px;
+  padding-inline: 15px;
+  text-decoration: none;
+}
+
+.button:hover,
+.kapela__button:hover {
+  background-color: #CE7C00;
+}
+
+@media screen and (min-width: 600px) {
+  .button {
+    position: relative;
+    top: 81%;
+    padding-block: 15px;
+    padding-inline: 25px;
+  }
+  .kapela__button {
+    position: relative;
+    left: -5px;
+  }
+}
+.overlay_flight_traveldil1 {
+  position: relative;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 50px;
+}
+
+.overlay_flight_traveldil1:target {
+  visibility: visible;
+  opacity: 2;
+}
+
+.popup_flight_travlDil1 {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 15px;
+  background-color: #CE7C00;
+  border-radius: 5px;
+  position: relative;
+  bottom: 15px;
+  transition: all 2s ease-in-out;
+}
+
+.popup_flight_travlDil1 .close_flight_travelDl1 {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup_flight_travlDil1 .content_flightht_travel_dil1 {
+  max-height: 15%;
+  overflow: visible;
+  font-size: small;
+  text-align: justify;
+}
+
+.overlay_flight_traveldil2 {
+  position: relative;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 50px;
+}
+
+.overlay_flight_traveldil2:target {
+  visibility: visible;
+  opacity: 2;
+}
+
+.popup_flight_travlDil2 {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 15px;
+  background-color: #CE7C00;
+  border-radius: 5px;
+  position: relative;
+  bottom: 50px;
+  transition: all 2s ease-in-out;
+}
+
+.popup_flight_travlDil2 .close_flight_travelDl2 {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup_flight_travlDil2 .content_flightht_travel_dil2 {
+  max-height: 15%;
+  overflow: visible;
+  font-size: small;
+  text-align: justify;
+}
+
+@media screen and (min-width: 600px) {
+  .overlay_flight_traveldil1 {
+    position: relative;
+    top: 58%;
+  }
+  .popup_flight_travlDil1 .close_flight_travelDl1 {
+    position: relative;
+    top: 0px;
+    right: -95%;
+  }
+  .overlay_flight_traveldil2 {
+    position: relative;
+    top: 58%;
+  }
+  .popup_flight_travlDil2 .close_flight_travelDl2 {
+    position: relative;
+    top: 0px;
+    right: -95%;
+  }
+}
+.month {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.kalendar {
+  display: grid;
+  grid-template-columns: repeat(7, 30px);
+  grid-template-rows: repeat(6, 30px);
+  list-style: none;
+  gap: 2px;
+  font-size: 14px;
+  padding: 0;
+}
+
+.kalendar li {
+  border: 1px solid #CE7C00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.kalendar a {
+  text-decoration: none;
+  color: white;
+}
+
+.zahlavi {
+  background-color: #CE7C00;
+  color: white;
+  border: none;
+}
+
+.predchozi,
+.nasledujici {
+  background-color: silver;
+  color: gray;
+  border: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.event {
+  background-color: #FF9900;
+}
+
+.event:hover {
+  background-color: #CE7C00;
+}
+
+@media screen and (min-width: 1000px) {
+  .calendar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+    gap: 15px;
+  }
+  .kalendar {
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: repeat(6, 40px);
+    gap: 5px;
+  }
+  .month {
+    display: block;
+    align-items: center;
+  }
+  h1 {
+    margin: 0;
+  }
+}

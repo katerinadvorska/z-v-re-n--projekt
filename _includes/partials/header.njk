@@ -1,0 +1,47 @@
+<header class="header">
+
+  <div>
+  <img class="logo" src="/images/logo_nebula.png" alt="logo klubu"/>
+</div>
+
+    <div class="odkazy">
+      <a class="odkaz" href="https://www.facebook.com/"
+        ><img
+          class="ikona"
+          src="/images/facebook_icon.svg"
+          alt="ikona facebooku"
+      /></a>
+      <a class="odkaz" href="https://www.instagram.com/"
+        ><img
+          class="ikona"
+          src="/images/instagram_icon.svg"
+          alt="ikona instagramu"
+      /></a>
+      <a class="odkaz" href="https://www.google.com/maps/place/Na+Kaplance+614%2F1,+266+01+Beroun-M%C4%9Bsto/@49.964976,14.068568,20.03z/data=!4m15!1m8!3m7!1s0x470ba53e5abbba3f:0x400af0f6614ba30!2sBeroun,+266+01+Beroun+1!3b1!8m2!3d49.9672047!4d14.0862836!16zL20vMDU5X3cx!3m5!1s0x470ba56bd22daf13:0x7d2dfac05d866c7c!8m2!3d49.964951!4d14.0684957!16s%2Fg%2F11cph6w8d0?entry=ttu"
+        ><img class="ikona" src="/images/map_icon_2.svg" alt="ikona mapy"
+      /></a>
+      <a
+        class="odkaz"
+        href="https://www.google.com/maps/place/Na+Kaplance+614%2F1,+266+01+Beroun-M%C4%9Bsto/@49.964976,14.068568,20.03z/data=!4m15!1m8!3m7!1s0x470ba53e5abbba3f:0x400af0f6614ba30!2sBeroun,+266+01+Beroun+1!3b1!8m2!3d49.9672047!4d14.0862836!16zL20vMDU5X3cx!3m5!1s0x470ba56bd22daf13:0x7d2dfac05d866c7c!8m2!3d49.964951!4d14.0684957!16s%2Fg%2F11cph6w8d0?entry=ttu"
+        >Na Kaplance 1 266 01 Beroun</a
+      >
+      <nav class="menu">
+        <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
+
+        <label for="menu-checkbox" class="menu__toggler">☰</label>
+
+        <ul class="menu__list">
+          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}"><a href="/" class="menu__link">Úvod</a></li>
+          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'program' }}">
+            <a href="/program/" class="menu__link" >Program</a>
+          </li>
+          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'onas' }}">
+            <a href="/onas/" class="menu__link" >O nás</a>
+          </li>
+          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakt' }}">
+            <a href="/kontakt/" class="menu__link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+</header>

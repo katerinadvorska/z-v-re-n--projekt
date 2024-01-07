@@ -1,0 +1,62 @@
+@use 'colors';
+
+// Mobilni zobrazeni
+.logo {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ikona {
+    width: 21px;
+}
+
+.odkazy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: colors.$c-text-primary;
+    font-family: 'Roboto Slab', serif;
+}
+
+.odkaz {
+    color: white;
+}
+
+.odkaz:hover {
+    color: colors.$c-button;
+}
+
+.menu__item--active .menu__link {
+    background-color: colors.$c-secundary;
+}
+
+// PC zobrazeni
+
+@media screen and (min-width: 600px) {
+    .header {
+    display: flex;
+    flex-direction: column;
+}
+
+.odkazy {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.ikona {
+    width: 21px;
+}
+
+}
