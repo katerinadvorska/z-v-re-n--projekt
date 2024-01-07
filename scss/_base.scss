@@ -125,12 +125,12 @@ body {
 
 .page_program__program_time {
     position: relative;
-    top: 85px;
+    top: 2px;
     left: 2px;
-    background-color: rgba(0, 0, 0, 0.500);
-    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.700);
+    border-radius: 5px;
     padding: 5px;
-    max-width: 15%;
+    max-width: 25%;
     font-size: 16px;
     text-align: center;
 }
@@ -142,7 +142,6 @@ body {
     background-color: rgba(0, 0, 0, 0.500);
     border-radius: 2px;
     padding: 5px;
-    max-width: 50%;
     margin: 0;
     text-align: center;
 }
