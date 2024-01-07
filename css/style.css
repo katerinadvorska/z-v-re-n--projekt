@@ -19,10 +19,29 @@
   color: white;
 }
 .menu__link:hover {
-  background-color: #CE7C00;
+  background-color: #5d0000;
 }
 .menu__checkbox:checked ~ .menu__list {
   display: block;
+}
+@media screen and (min-width: 650px) {
+  .menu__toggler {
+    display: none;
+  }
+  .menu__list {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .menu__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    padding: 10px 10px;
+    margin: 0 5px;
+    border-radius: 2px;
+  }
 }
 @media screen and (min-width: 800px) {
   .menu__toggler {
@@ -72,14 +91,14 @@
 }
 
 .odkaz:hover {
-  color: #FF9900;
+  color: #c30000;
 }
 
 .menu__item--active .menu__link {
-  background-color: #CE7C00;
+  background-color: #5d0000;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -95,6 +114,9 @@
   }
   .ikona {
     width: 21px;
+  }
+  .odkaz {
+    font-size: 12px;
   }
 }
 .footer {
@@ -139,7 +161,7 @@ body {
 }
 .section__news {
   font-family: "Istok Web", sans-serif;
-  background-color: #CE7C00;
+  background-color: #5d0000;
   margin: 20px;
   border-radius: 5px;
 }
@@ -181,6 +203,7 @@ body {
     padding-right: 20px;
     padding-bottom: 10px;
     padding-left: 20px;
+    margin-top: 20px;
   }
   .news__text {
     margin: 0;
@@ -208,7 +231,7 @@ body {
 
 .page_program__program_date {
   border-radius: 2px;
-  background-color: #CE7C00;
+  background-color: #5d0000;
   position: absolute;
   right: -10px;
   top: -22px;
@@ -253,7 +276,7 @@ body {
   }
   .page_program__program_date {
     border-radius: 5px;
-    background-color: #CE7C00;
+    background-color: #5d0000;
     position: absolute;
     right: -10px;
     top: -22px;
@@ -264,7 +287,7 @@ body {
     top: 77%;
     left: 2px;
     text-align: left;
-    max-width: 8%;
+    max-width: 21%;
   }
   .page_program__program_band {
     position: relative;
@@ -276,7 +299,7 @@ body {
 }
 .kapela {
   font-family: "Istok Web", sans-serif;
-  border: 1px solid #CE7C00;
+  border: 1px solid #5d0000;
   border-radius: 15px;
   margin: 20px;
 }
@@ -286,7 +309,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #CE7C00;
+  background-color: #5d0000;
   text-transform: uppercase;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -317,7 +340,7 @@ h5 {
   .kapela {
     display: flex;
     flex-direction: row;
-    border: 2px solid #CE7C00;
+    border: 2px solid #5d0000;
   }
   .imgtext {
     display: flex;
@@ -328,12 +351,12 @@ h5 {
     display: block;
     padding: 40px;
     min-width: 150px;
-    background-color: black;
-    color: #CE7C00;
+    background-color: #5d0000;
+    color: white;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 0px;
-    border-right: 1px solid #CE7C00;
+    border-right: 1px solid #5d0000;
   }
   .kapela__img img {
     max-height: 200px;
@@ -353,7 +376,7 @@ h5 {
   }
 }
 .onas {
-  background-color: #CE7C00;
+  background-color: #5d0000;
   color: white;
   font-family: "Istok Web", sans-serif;
   padding: 15px;
@@ -420,7 +443,7 @@ h5 {
 }
 .contact {
   font-size: 14px;
-  background-color: #CE7C00;
+  background-color: #5d0000;
   text-align: left;
   border-radius: 5px;
   font-family: "Istok Web", sans-serif;
@@ -443,7 +466,7 @@ h5 {
 }
 
 .kontakt a:hover {
-  color: #FF9900;
+  color: #c30000;
 }
 
 @media screen and (min-width: 600px) {
@@ -464,7 +487,7 @@ h5 {
   position: relative;
   bottom: -100px;
   left: -2px;
-  background-color: #FF9900;
+  background-color: #c30000;
   color: white;
   text-align: center;
   border-radius: 5px;
@@ -478,7 +501,7 @@ h5 {
   position: relative;
   bottom: 2px;
   left: -2px;
-  background-color: #FF9900;
+  background-color: #c30000;
   color: white;
   text-align: center;
   border-radius: 5px;
@@ -490,7 +513,7 @@ h5 {
 
 .button:hover,
 .kapela__button:hover {
-  background-color: #CE7C00;
+  background-color: #5d0000;
 }
 
 @media screen and (min-width: 600px) {
@@ -521,7 +544,7 @@ h5 {
 .popup_flight_travlDil1 {
   border: 1px solid rgb(0, 0, 0);
   padding: 15px;
-  background-color: #CE7C00;
+  background-color: #5d0000;
   border-radius: 5px;
   position: relative;
   bottom: 15px;
@@ -562,7 +585,7 @@ h5 {
 .popup_flight_travlDil2 {
   border: 1px solid rgb(0, 0, 0);
   padding: 15px;
-  background-color: #CE7C00;
+  background-color: #5d0000;
   border-radius: 5px;
   position: relative;
   bottom: 50px;
@@ -625,7 +648,7 @@ h5 {
 }
 
 .kalendar li {
-  border: 1px solid #CE7C00;
+  border: 1px solid #5d0000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -638,7 +661,7 @@ h5 {
 }
 
 .zahlavi {
-  background-color: #CE7C00;
+  background-color: #5d0000;
   color: white;
   border: none;
 }
@@ -656,11 +679,11 @@ h1 {
 }
 
 .event {
-  background-color: #FF9900;
+  background-color: #c30000;
 }
 
 .event:hover {
-  background-color: #CE7C00;
+  background-color: #5d0000;
 }
 
 @media screen and (min-width: 1000px) {

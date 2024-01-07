@@ -38,7 +38,7 @@
 
 // PC zobrazeni
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
     .header {
     display: flex;
     flex-direction: column;
@@ -57,6 +57,10 @@
 
 .ikona {
     width: 21px;
+}
+
+.odkaz {
+    font-size: 12px;
 }
 
 }
